@@ -15,7 +15,6 @@ body{
 
 main{
   margin: 30px;
-
   
 }
 
@@ -23,6 +22,9 @@ h1{
   font-weight: 700;
   font-size: 21px;
   color: hsl(218, 44%, 22%);
+  justify-content: center;
+  align-items: center;
+  
   
 }
 
@@ -41,6 +43,9 @@ p{
   border-radius: 10px;
   max-width: 350px;  
   margin: auto; 
+  box-shadow: 0 5px 5px 5px hsl(220, 15%, 55%);
+
+  
    
 }
 
@@ -48,11 +53,11 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  box-sizing: content-box;
-  max-width: 330px;
-  min-width: 160px;
+  align-items: center;  
   margin: 40px 20px;
+  padding: 0;
+  
+  
 }
 
 .image{
@@ -64,13 +69,58 @@ p{
 }
 
 img{
-  max-width: 330px;  
-  min-width: 200px;  
+  max-width: 300px;  
+  min-width: 100px;  
   border-radius: 10px;
 }
 
 .attribution { 
   font-size: 11px;
-margin: 30px 0;
+  margin: 30px 0;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:409px){
+  
+  .texto{
+    margin: 40px 28px;    
+  }
+
+  main{
+    margin-top: 80px;
+  }
+}
+
+
+
+@media screen and (max-width:360px){
+
+  .texto{
+    margin: 40px 12px;
+    
+  }
+
+  main{
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width:354px){
+
+  h1{
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 10px;
+  }
+
+  .texto{
+    margin: 40px 10px;
+    
+  }
+}
+
